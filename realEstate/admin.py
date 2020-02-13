@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from .models import Customer
 from .models import Property
 
@@ -8,9 +7,9 @@ from .models import Property
 
 class CustomerList(admin.ModelAdmin):
     list_display = ('fname','lname','city', 'phone')
-    list_filter = ('name', 'city')
-    search_fields = ('name', 'city')
-    ordering = ['name']
+    list_filter = ('fname', 'city')
+    search_fields = ('fname', 'city')
+    ordering = ['fname']
 
 
 admin.site.register(Customer)
@@ -26,4 +25,4 @@ class PropertyList(admin.ModelAdmin):
 
 
 admin.site.register(Property)
-from django.contrib import admin
+

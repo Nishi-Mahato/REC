@@ -22,6 +22,7 @@ class Customer(models.Model):
     city = models.CharField(max_length=50)
     state = models.CharField(max_length=50)
     zipcode = models.CharField(max_length=10)
+    email = models.EmailField(max_length=200, default='Null')
     phone = models.CharField(max_length=50)
     maxPrice = models.IntegerField()
     minPrice = models.IntegerField()
@@ -38,7 +39,7 @@ class Customer(models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.fname)
 
 
 # Properties Model
@@ -57,8 +58,7 @@ class Property (models.Model):
     bath = models.CharField(max_length=50)
     build = models.CharField(max_length=50)
     purpose = models.CharField(max_length=10, choices=purpose, default='For Sale', blank=False)
-    builddate = models.DateTimeField(
-        default=timezone.now)
+    builddate = models.DateTimeField(default=timezone.now)
     status = models.BooleanField(default='True')
 
     created_date = models.DateTimeField(

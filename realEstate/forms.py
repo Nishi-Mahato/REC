@@ -12,4 +12,4 @@ class CustomerForm(forms.ModelForm):
 class PropertyForm(forms.ModelForm):
     class Meta:
         model = Property
-        fields = ('customer', 'prop_number', 'type', 'address', 'city', 'state', 'zipcode', 'dimension', 'price','image','bed','bath', 'build', 'purpose', 'status','builddate', 'status',)
+        fields = ('customer', 'prop_number', 'type', 'address', 'city', 'state', 'zipcode', 'dimension', 'price','image','bed','bath', 'build', 'purpose', 'status',)

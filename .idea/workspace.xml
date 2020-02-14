@@ -2,32 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbee6cc9-5167-4762-ab81-70cfcdb7eeab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/realEstate/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/static/css/realEstate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/customer_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/customer_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/customer_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/customer_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realEstate/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/REC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/REC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/REC/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/REC/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REC/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/REC/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realEstate/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/realEstate/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realEstate/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/realEstate/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realEstate/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/realEstate/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realEstate/templates/realEstate/property_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/realEstate/templates/realEstate/property_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realEstate/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/realEstate/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +98,8 @@
       <workItem from="1580403246911" duration="1853000" />
       <workItem from="1581569856293" duration="365000" />
       <workItem from="1581618628928" duration="12081000" />
+      <workItem from="1581651016783" duration="6086000" />
+      <workItem from="1581658461892" duration="25000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'realEstate.apps.RealestateConfig',
     'realEstate',
-    #'crispy_forms',
+    'crispy_forms',
 
 ]
 

@@ -58,7 +58,6 @@ class Property (models.Model):
     bath = models.CharField(max_length=50)
     build = models.CharField(max_length=50)
     purpose = models.CharField(max_length=10, choices=purpose, default='For Sale', blank=False)
-    builddate = models.DateTimeField(default=timezone.now)
     status = models.BooleanField(default='True')
 
     created_date = models.DateTimeField(
@@ -74,4 +73,5 @@ class Property (models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.customer)
+        return str(self.prop_number)
+

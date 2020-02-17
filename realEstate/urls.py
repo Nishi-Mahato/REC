@@ -16,5 +16,4 @@ urlpatterns = [
     path('property/<int:pk>/delete/', views.property_delete, name='property_delete'),
     path('property/create', views.property_new, name='property_new'),
     path('property/<int:pk>/summary', views.property_summary, name='property_summary'),
-
 ]

@@ -73,5 +73,5 @@ class Property (models.Model):
         self.save()
 
     def __str__(self):
-        return str(self.prop_number)
+        return str(self.customer)
 

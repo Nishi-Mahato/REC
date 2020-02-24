@@ -6,14 +6,15 @@ from .forms import *
 from django.utils import timezone
 from django.http import HttpResponse
 from django.views.generic import View
-
+from django.contrib.auth.decorators import permission_required
+from .utils import render_to_pdf
+from django.template.loader import get_template
 now = timezone.now()
 
-# importing get_template from loader
-from django.template.loader import get_template
 
-# import render_to_pdf from util.py
-from .utils import render_to_pdf
+def getActiveEvent():
+    activeEvent = Property.objects.filter(event_end_date__isnull=True)
+    return activeEvent
 
 
 # Creating our view, it is a class based view
@@ -136,11 +137,22 @@ def property_new(request):
     return render(request, 'realEstate/property_new.html', {'form': form})
 
 
-# Property_Summary
 @login_required
-def property_summary(request, pk):
-    customer = get_object_or_404(Customer, pk=pk)
-    customers = Customer.objects.filter(created_date__lte=timezone.now())
-    propertys = Property.objects.filter(customer=pk)
-    return render(request, 'realEstate/property_summary.html', {'customers': customers,
-                                                                'propertys': propertys})
+def property_summary_pdf(request):
+    global propertys
+    propertys = Property.objects.filter(created_date__lte=timezone.now())
+    context = {'property': propertys,}
+    template = get_template('realEstate/property_summary_pdf.html')
+    html = template.render(context)
+    pdf = render_to_pdf('realEstate/property_summary_pdf.html', context)
+    return pdf
+
+
+@permission_required('is_superuser')
+def admin_home(request):
+
+        return render(request, 'realEstate/admin_home.html',
+                      {'admin': admin_home})
+
+
+

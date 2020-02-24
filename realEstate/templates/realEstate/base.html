@@ -71,6 +71,11 @@
                 <li><a href="{% url 'realEstate:home' %}">Home</a></li>
                 <li><a href="{% url 'realEstate:customer_list' %}">Customers</a></li>
                 <li><a href="{% url 'realEstate:property_list' %}">Properties</a></li>
+                {% if user.is_authenticated %}
+                        {% if user.is_superuser%}
+                            <li><a href="{% url 'realEstate:admin_home' %}">Admin</a></li>
+                        {% endif %}
+                {% endif %}
 
             </ul>
             <ul class="nav navbar-nav navbar-right">

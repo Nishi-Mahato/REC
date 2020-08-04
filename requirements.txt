@@ -1,4 +1,4 @@
-django==2.2.10
+django
 django-crispy-forms
 Pillow
 social-auth-app-django==2.1.0
